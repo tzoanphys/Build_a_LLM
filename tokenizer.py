@@ -121,3 +121,33 @@ print("Vocabulary (char_to_id):", char_to_id)
 print("Reverse vocabulary (id_to_char):", id_to_char)
 print("Encoded:", encoded)
 print("Decoded:", decoded)
+
+
+
+#################################
+# CHARACTER TOKENIZER DIAGRAM   #
+#################################
+
+# RAW TEXT
+#   |
+#   v
+# "salut"
+#   |
+#   | build_vocab(text)
+#   v
+# unique characters -> sorted characters
+#   |
+#   v
+# ['a', 'l', 's', 't', 'u']
+#   |
+#   v
+# char_to_id = {'a':0, 'l':1, 's':2, 't':3, 'u':4}
+# id_to_char = {0:'a', 1:'l', 2:'s', 3:'t', 4:'u'}
+#   |
+#   | encode(text, char_to_id)
+#   v
+# [2, 0, 1, 4, 3]
+#   |
+#   | decode(ids, id_to_char)
+#   v
+# "salut"
