@@ -337,3 +337,13 @@ print(repr(next_token_2))
 
 print("\nGenerated text:")
 print(test_text_2 + next_token_2)
+
+# --------------------------------------------------
+print("\nEnter a word to continue:")
+user_input = input()
+user_input_id, user_next_token = generate_next_token(model, tokenizer, user_input)
+
+print("\nPredicted next token id:", user_input_id)
+print("\nPredicted next token:", repr(user_next_token))
+print("\nGenerated text:", user_input + user_next_token)
+
