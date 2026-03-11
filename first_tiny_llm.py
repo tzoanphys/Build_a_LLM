@@ -2,7 +2,6 @@
 # EDUCATIONAL GPT-LIKE TOKENIZER
 # + SIMPLE NEURAL NETWORK
 # + TRAINER PART
-# Comments are in English only
 # ------------------------------------------
 
 import re
